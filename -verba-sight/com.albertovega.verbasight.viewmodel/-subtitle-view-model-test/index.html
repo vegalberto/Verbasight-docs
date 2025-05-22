@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SubtitleViewModelTest</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            VerbaSight
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":app:dokkaHtml/unitTest">Unit Tests</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="VerbaSight::com.albertovega.verbasight.viewmodel/SubtitleViewModelTest///PointingToDeclaration//623371965">
+  <div class="breadcrumbs"><a href="../../../index.html">VerbaSight</a><span class="delimiter">/</span><a href="../index.html">com.albertovega.verbasight.viewmodel</a><span class="delimiter">/</span><span class="current">SubtitleViewModelTest</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Subtitle</span><wbr></wbr><span>View</span><wbr></wbr><span>Model</span><wbr></wbr><span><span>Test</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/unitTest" data-filterable-set=":app:dokkaHtml/unitTest" data-active="" data-toggle=":app:dokkaHtml/unitTest">Unit Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/unitTest"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">SubtitleViewModelTest</a></div><p class="paragraph">Pruebas unitarias para SubtitleViewModel. </p><p class="paragraph"> Estas pruebas verifican el comportamiento del ViewModel cuando se cargan subtítulos, se busca una posición específica o se ajusta el tiempo manualmente. </p><p class="paragraph"> Se usa InstantTaskExecutorRule para forzar la ejecución síncrona de LiveData y evitar errores en los tests. De la misma manera se activa un &quot;modo de prueba&quot; dentro del ViewModel ya que si no, ViewModel ejecutaría un Timer que avanza en segundo plano y produce errores en los test. </p></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="828559675%2FConstructors%2F623371965" anchor-label="SubtitleViewModelTest" id="828559675%2FConstructors%2F623371965" data-filterable-set=":app:dokkaHtml/unitTest"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":app:dokkaHtml/unitTest" data-filterable-set=":app:dokkaHtml/unitTest">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-subtitle-view-model-test.html"><span>Subtitle</span><wbr></wbr><span>View</span><wbr></wbr><span>Model</span><wbr></wbr><span><span>Test</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="828559675%2FConstructors%2F623371965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/unitTest" data-filterable-set=":app:dokkaHtml/unitTest" data-active="" data-toggle=":app:dokkaHtml/unitTest">Unit Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/unitTest"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1808356315%2FProperties%2F623371965" anchor-label="rule" id="-1808356315%2FProperties%2F623371965" data-filterable-set=":app:dokkaHtml/unitTest"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/unitTest" data-filterable-set=":app:dokkaHtml/unitTest">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rule.html"><span><span>rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1808356315%2FProperties%2F623371965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/unitTest" data-filterable-set=":app:dokkaHtml/unitTest" data-active="" data-toggle=":app:dokkaHtml/unitTest">Unit Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/unitTest"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="rule.html">rule</a><span class="token operator">: </span>InstantTaskExecutorRule</div><div class="brief ">Fuerza a LiveData a comportase de forma síncrona durante los tests.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1483499428%2FFunctions%2F623371965" anchor-label="setUp" id="-1483499428%2FFunctions%2F623371965" data-filterable-set=":app:dokkaHtml/unitTest"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/unitTest" data-filterable-set=":app:dokkaHtml/unitTest">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-up.html"><span>set</span><wbr></wbr><span><span>Up</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1483499428%2FFunctions%2F623371965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/unitTest" data-filterable-set=":app:dokkaHtml/unitTest" data-active="" data-toggle=":app:dokkaHtml/unitTest">Unit Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/unitTest"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-up.html"><span class="token function">setUp</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Inicializa el ViewModel y lo configura en modo de prueba para evitar temporizadores en segundo plano que puedan causar errores.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2113873787%2FFunctions%2F623371965" anchor-label="testAdjustTimeLimits" id="2113873787%2FFunctions%2F623371965" data-filterable-set=":app:dokkaHtml/unitTest"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/unitTest" data-filterable-set=":app:dokkaHtml/unitTest">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="test-adjust-time-limits.html"><span>test</span><wbr></wbr><span>Adjust</span><wbr></wbr><span>Time</span><wbr></wbr><span><span>Limits</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2113873787%2FFunctions%2F623371965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/unitTest" data-filterable-set=":app:dokkaHtml/unitTest" data-active="" data-toggle=":app:dokkaHtml/unitTest">Unit Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/unitTest"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="test-adjust-time-limits.html"><span class="token function">testAdjustTimeLimits</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Verifica que el método <code class="lang-kotlin">adjustTime()</code> no permita avanzar o retroceder fuera de los límites válidos.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="277433685%2FFunctions%2F623371965" anchor-label="testLoadSubtitlesAndSeek" id="277433685%2FFunctions%2F623371965" data-filterable-set=":app:dokkaHtml/unitTest"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/unitTest" data-filterable-set=":app:dokkaHtml/unitTest">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="test-load-subtitles-and-seek.html"><span>test</span><wbr></wbr><span>Load</span><wbr></wbr><span>Subtitles</span><wbr></wbr><span>And</span><wbr></wbr><span><span>Seek</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="277433685%2FFunctions%2F623371965"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/unitTest" data-filterable-set=":app:dokkaHtml/unitTest" data-active="" data-toggle=":app:dokkaHtml/unitTest">Unit Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/unitTest"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="test-load-subtitles-and-seek.html"><span class="token function">testLoadSubtitlesAndSeek</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Verifica que el método <code class="lang-kotlin">loadSubtitles()</code> cargue correctamente una lista de subtítulos y que <code class="lang-kotlin">seekTo()</code> seleccione el subtítulo correspondiente en función del tiempo que se haya seleccionado.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

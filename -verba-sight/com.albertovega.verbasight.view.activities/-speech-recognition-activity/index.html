@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SpeechRecognitionActivity</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            VerbaSight
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":app:dokkaHtml/main">main</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="VerbaSight::com.albertovega.verbasight.view.activities/SpeechRecognitionActivity///PointingToDeclaration//1745091852">
+  <div class="breadcrumbs"><a href="../../../index.html">VerbaSight</a><span class="delimiter">/</span><a href="../index.html">com.albertovega.verbasight.view.activities</a><span class="delimiter">/</span><span class="current">SpeechRecognitionActivity</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Speech</span><wbr></wbr><span>Recognition</span><wbr></wbr><span><span>Activity</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">SpeechRecognitionActivity</a> : <a href="../-base-activity/index.html">BaseActivity</a>, <a href="../../com.albertovega.verbasight.interfaces/-tutorializable/index.html">Tutorializable</a>, <a href="../../com.albertovega.verbasight.interfaces/-transcription-exportable/index.html">TranscriptionExportable</a></div><p class="paragraph"><code class="lang-kotlin">SpeechRecognitionActivity</code> es una actividad encargada de realizar el reconocimiento de voz en tiempo real mediante la librería <strong>Vosk</strong>, y mostrar en pantalla los subtítulos generados dinámicamente conforme el usuario habla.</p><p class="paragraph">Esta actividad representa una de las funcionalidades principales de la aplicación VerbaSight, enfocada en mejorar la accesibilidad para personas con discapacidad auditiva, permitiéndoles visualizar transcripciones instantáneas en gafas de realidad aumentada o directamente en pantalla.</p><p class="paragraph">Principales características:</p><ul><li>Obtención de permisos para capturar audio</li><li>Carga del modelo Vosk desde la clase de aplicación personalizada <a href="../../com.albertovega.verbasight.core/-verbasight-app/index.html">VerbasightApp</a></li><li>Inicio y gestión del reconocimiento de voz en tiempo real</li><li>Visualización de subtítulos mediante SubtitleView</li><li>Gestión del estado de reconocimiento de voz mediante <a href="../../com.albertovega.verbasight.viewmodel/-speech-recognition-view-model/index.html">SpeechRecognitionViewModel</a></li><li>Exportación de transcripciones mediante <a href="../../com.albertovega.verbasight.view.dialogs/-export-transcription-dialog-fragment/index.html">ExportTranscriptionDialogFragment</a></li><li>Inclusión de un tutorial visual interactivo para explicar su funcionamiento al usuario</li></ul><p class="paragraph">Se integra con el patrón de arquitectura <strong>MVVM</strong>, separando la lógica del reconocimiento en el ViewModel <a href="../../com.albertovega.verbasight.viewmodel/-speech-recognition-view-model/index.html">SpeechRecognitionViewModel</a> y permitiendo una gestión reactiva del estado con LiveData.</p><p class="paragraph">Además, implementa las interfaces <a href="../../com.albertovega.verbasight.interfaces/-transcription-exportable/index.html">TranscriptionExportable</a> para la exportación de subtítulos y <a href="../../com.albertovega.verbasight.interfaces/-tutorializable/index.html">Tutorializable</a> para mostrar el tutorial al usuario si es la primera vez que abre la actividad o si ha vuelto a activar los subtítulos desde las opciones de <a href="../-settings-activity/index.html">SettingsActivity</a>.</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Alberto Vega García</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2025-05-23</p></span><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../com.albertovega.verbasight.core/-verbasight-app/index.html"><span>Verbasight</span><wbr></wbr><span><span>App</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../com.albertovega.verbasight.viewmodel/-speech-recognition-view-model/index.html"><span>Speech</span><wbr></wbr><span>Recognition</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Model</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span>Subtitle</span><wbr></wbr><span><span>View</span></span></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../com.albertovega.verbasight.view.dialogs/-export-transcription-dialog-fragment/index.html"><span>Export</span><wbr></wbr><span>Transcription</span><wbr></wbr><span>Dialog</span><wbr></wbr><span><span>Fragment</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../com.albertovega.verbasight.interfaces/-transcription-exportable/index.html"><span>Transcription</span><wbr></wbr><span><span>Exportable</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../com.albertovega.verbasight.interfaces/-tutorializable/index.html"><span><span>Tutorializable</span></span></a></div></span></div><div></div></div></div></div></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-611380355%2FConstructors%2F1745091852" anchor-label="SpeechRecognitionActivity" id="-611380355%2FConstructors%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-speech-recognition-activity.html"><span>Speech</span><wbr></wbr><span>Recognition</span><wbr></wbr><span><span>Activity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-611380355%2FConstructors%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="960719305%2FFunctions%2F1745091852" anchor-label="addSubtitles" id="960719305%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-subtitles.html"><span>add</span><wbr></wbr><span><span>Subtitles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="960719305%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-subtitles.html"><span class="token function">addSubtitles</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">text<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">endTimeMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Agrega un subtítulo al ViewModel.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="654646644%2FFunctions%2F1745091852" anchor-label="getSubtitles" id="654646644%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-subtitles.html"><span>get</span><wbr></wbr><span><span>Subtitles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="654646644%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-subtitles.html"><span class="token function">getSubtitles</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../../com.albertovega.verbasight.model/-subtitle/index.html">Subtitle</a><span class="token operator">&gt;</span></div><div class="brief ">Devuelve todos los subtítulos acumulados el reconocimiento de voz.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2014000677%2FFunctions%2F1745091852" anchor-label="onBackPressed" id="2014000677%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-back-pressed.html"><span>on</span><wbr></wbr><span>Back</span><wbr></wbr><span><span>Pressed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2014000677%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-back-pressed.html"><span class="token function">onBackPressed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Maneja el evento de retroceso (botón Back).</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="66461820%2FFunctions%2F1745091852" anchor-label="onCreate" id="66461820%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-create.html"><span>on</span><wbr></wbr><span><span>Create</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="66461820%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-create.html"><span class="token function">onCreate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">state<span class="token operator">: </span>Bundle</span></span><span class="token punctuation">)</span></div><div class="brief ">Método principal de ciclo de vida.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="117675183%2FFunctions%2F1745091852" anchor-label="onError" id="117675183%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-error.html"><span>on</span><wbr></wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="117675183%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-error.html"><span class="token function">onError</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">e<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/Exception.html">Exception</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Llama a este método si ocurre un error durante el reconocimiento de voz.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1420327640%2FFunctions%2F1745091852" anchor-label="onFinalResult" id="-1420327640%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-final-result.html"><span>on</span><wbr></wbr><span>Final</span><wbr></wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1420327640%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-final-result.html"><span class="token function">onFinalResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hypothesis<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Envía los resultados finales del reconocimiento al viewModel.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1093283069%2FFunctions%2F1745091852" anchor-label="onPartialResult" id="1093283069%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-partial-result.html"><span>on</span><wbr></wbr><span>Partial</span><wbr></wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1093283069%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-partial-result.html"><span class="token function">onPartialResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hypothesis<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Maneja los resultados parciales de reconocimiento y actualiza el texto dinámicamente.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="320992607%2FFunctions%2F1745091852" anchor-label="onRequestPermissionsResult" id="320992607%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-request-permissions-result.html"><span>on</span><wbr></wbr><span>Request</span><wbr></wbr><span>Permissions</span><wbr></wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="320992607%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-request-permissions-result.html"><span class="token function">onRequestPermissionsResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">requestCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">permissions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">grantResults<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Resultado del manejo de la solicitud de permisos del sistema.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-839954152%2FFunctions%2F1745091852" anchor-label="onResult" id="-839954152%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-result.html"><span>on</span><wbr></wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-839954152%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-result.html"><span class="token function">onResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">hypothesis<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Maneja los resultados finales del reconocimiento (los envía al viewModel).</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-291924417%2FFunctions%2F1745091852" anchor-label="onTimeout" id="-291924417%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-timeout.html"><span>on</span><wbr></wbr><span><span>Timeout</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-291924417%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-timeout.html"><span class="token function">onTimeout</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Se llama cuando el motor de reconocimiento entra en timeout por inactividad.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1739938124%2FFunctions%2F1745091852" anchor-label="showTutorialIfNeeded" id="1739938124%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-tutorial-if-needed.html"><span>show</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span>If</span><wbr></wbr><span><span>Needed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1739938124%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="show-tutorial-if-needed.html"><span class="token function">showTutorialIfNeeded</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Muestra un tutorial guiado sobre la interfaz de reconocimiento de voz.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="671009551%2FFunctions%2F1745091852" anchor-label="startTimingSession" id="671009551%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start-timing-session.html"><span>start</span><wbr></wbr><span>Timing</span><wbr></wbr><span><span>Session</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="671009551%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="start-timing-session.html"><span class="token function">startTimingSession</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Inicia el cronómetro interno (tiempos relativos de transcripción).</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

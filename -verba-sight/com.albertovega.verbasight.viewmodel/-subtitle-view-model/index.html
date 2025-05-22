@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SubtitleViewModel</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            VerbaSight
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":app:dokkaHtml/main">main</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="VerbaSight::com.albertovega.verbasight.viewmodel/SubtitleViewModel///PointingToDeclaration//1745091852">
+  <div class="breadcrumbs"><a href="../../../index.html">VerbaSight</a><span class="delimiter">/</span><a href="../index.html">com.albertovega.verbasight.viewmodel</a><span class="delimiter">/</span><span class="current">SubtitleViewModel</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Subtitle</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Model</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">SubtitleViewModel</a></div><p class="paragraph">ViewModel encargado de la gestion logica de la reproduccion de subtitulos utilizados por el reproductor .srt de la aplicacion VerbaSight. </p><p class="paragraph"> Esta clase utiliza el patrón MVVM y encapsula la lógica de reproducción temporal y sincronización de subtítulos cargados desde archivo .srt, utilizados en el reproductor Utiliza LiveData para notificar cambios de tiempo y subtitulo activo a la capa de presentacion que este siendo usada (como Activities o Fragments que observan estos datos). </p><p class="paragraph"> El ViewModel mantiene el estado de reproduccion, incluyendo la posicion actual, la duracion total del subtitulo y si la reproduccion esta activa o pausada. </p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Alberto Vega Garcia</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2025-05-12</p></span></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="541659423%2FConstructors%2F1745091852" anchor-label="SubtitleViewModel" id="541659423%2FConstructors%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-subtitle-view-model.html"><span>Subtitle</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="541659423%2FConstructors%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-33059296%2FFunctions%2F1745091852" anchor-label="adjustTime" id="-33059296%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="adjust-time.html"><span>adjust</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-33059296%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="adjust-time.html"><span class="token function">adjustTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ms<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Ajusta la posicion de reproduccion en milisegundos.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-178086572%2FFunctions%2F1745091852" anchor-label="getCurrentSubtitle" id="-178086572%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-current-subtitle.html"><span>get</span><wbr></wbr><span>Current</span><wbr></wbr><span><span>Subtitle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-178086572%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-subtitle.html"><span class="token function">getCurrentSubtitle</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>LiveData&lt;String&gt;</div><div class="brief ">Devuelve el subtitulo actual observable.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1373320257%2FFunctions%2F1745091852" anchor-label="getCurrentTime" id="-1373320257%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-current-time.html"><span>get</span><wbr></wbr><span>Current</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1373320257%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-current-time.html"><span class="token function">getCurrentTime</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>LiveData&lt;Integer&gt;</div><div class="brief ">Devuelve el tiempo actual observable en milisegundos.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="725651393%2FFunctions%2F1745091852" anchor-label="getIsPlaying" id="725651393%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-is-playing.html"><span>get</span><wbr></wbr><span>Is</span><wbr></wbr><span><span>Playing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="725651393%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-is-playing.html"><span class="token function">getIsPlaying</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span>LiveData&lt;Boolean&gt;</div><div class="brief ">Devuelve si la reproduccion esta activa o no (pausada).</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1615138989%2FFunctions%2F1745091852" anchor-label="loadSubtitles" id="1615138989%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="load-subtitles.html"><span>load</span><wbr></wbr><span><span>Subtitles</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1615138989%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="load-subtitles.html"><span class="token function">loadSubtitles</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">subs<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../../com.albertovega.verbasight.model/-subtitle/index.html">Subtitle</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Carga una lista de subtitulos y comienza la reproduccion desde el inicio.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1940874645%2FFunctions%2F1745091852" anchor-label="pause" id="1940874645%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pause.html"><span><span>pause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1940874645%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="pause.html"><span class="token function">pause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Pausa la reproduccion y detiene el temporizador.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-901522885%2FFunctions%2F1745091852" anchor-label="play" id="-901522885%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="play.html"><span><span>play</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-901522885%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="play.html"><span class="token function">play</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Inicia la reproduccion de subtitulos con un temporizador de 100 ms.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-781891401%2FFunctions%2F1745091852" anchor-label="seekTo" id="-781891401%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="seek-to.html"><span>seek</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-781891401%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="seek-to.html"><span class="token function">seekTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ms<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Salta a una posicion especifica de reproduccion.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2033014086%2FFunctions%2F1745091852" anchor-label="setTestMode" id="2033014086%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-test-mode.html"><span>set</span><wbr></wbr><span>Test</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2033014086%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-test-mode.html"><span class="token function">setTestMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">testMode<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-561594067%2FFunctions%2F1745091852" anchor-label="stop" id="-561594067%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop.html"><span><span>stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-561594067%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="stop.html"><span class="token function">stop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Detiene completamente la reproduccion y limpia el temporizador.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1345671901%2FFunctions%2F1745091852" anchor-label="togglePlayPause" id="1345671901%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="toggle-play-pause.html"><span>toggle</span><wbr></wbr><span>Play</span><wbr></wbr><span><span>Pause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1345671901%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="toggle-play-pause.html"><span class="token function">togglePlayPause</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Alterna entre reproducir y pausar segun el estado actual.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

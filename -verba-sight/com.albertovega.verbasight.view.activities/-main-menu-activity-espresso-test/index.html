@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>MainMenuActivityEspressoTest</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            VerbaSight
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":app:dokkaHtml/androidTest">Android Instrumented Tests</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="VerbaSight::com.albertovega.verbasight.view.activities/MainMenuActivityEspressoTest///PointingToDeclaration//721203029">
+  <div class="breadcrumbs"><a href="../../../index.html">VerbaSight</a><span class="delimiter">/</span><a href="../index.html">com.albertovega.verbasight.view.activities</a><span class="delimiter">/</span><span class="current">MainMenuActivityEspressoTest</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Main</span><wbr></wbr><span>Menu</span><wbr></wbr><span>Activity</span><wbr></wbr><span>Espresso</span><wbr></wbr><span><span>Test</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/androidTest" data-filterable-set=":app:dokkaHtml/androidTest" data-active="" data-toggle=":app:dokkaHtml/androidTest">Android Instrumented Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/androidTest"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">MainMenuActivityEspressoTest</a></div><p class="paragraph">Prueba instrumentada con Espresso que verifica el funcionamiento del menu principal. </p><p class="paragraph"> Este test comprueba que al hacer clic en el item de &quot;Reconocimiento de Voz&quot; en el menu principal, se lanza correctamente la actividad SpeechRecognitionActivity. </p><p class="paragraph"> Tambien desactiva el tutorial y concede el permiso de microfono automaticamente para evitar interferencias durante la prueba. Sin desactivar el tutorial el test falla ya que no puede hacer click al menu. Conceder el permiso es para no ver la ventana de solicitud de permiso en el test. </p></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-569483865%2FConstructors%2F721203029" anchor-label="MainMenuActivityEspressoTest" id="-569483865%2FConstructors%2F721203029" data-filterable-set=":app:dokkaHtml/androidTest"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":app:dokkaHtml/androidTest" data-filterable-set=":app:dokkaHtml/androidTest">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-main-menu-activity-espresso-test.html"><span>Main</span><wbr></wbr><span>Menu</span><wbr></wbr><span>Activity</span><wbr></wbr><span>Espresso</span><wbr></wbr><span><span>Test</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-569483865%2FConstructors%2F721203029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/androidTest" data-filterable-set=":app:dokkaHtml/androidTest" data-active="" data-toggle=":app:dokkaHtml/androidTest">Android Instrumented Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/androidTest"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-529983473%2FProperties%2F721203029" anchor-label="permissionRule" id="-529983473%2FProperties%2F721203029" data-filterable-set=":app:dokkaHtml/androidTest"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/androidTest" data-filterable-set=":app:dokkaHtml/androidTest">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="permission-rule.html"><span>permission</span><wbr></wbr><span><span>Rule</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-529983473%2FProperties%2F721203029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/androidTest" data-filterable-set=":app:dokkaHtml/androidTest" data-active="" data-toggle=":app:dokkaHtml/androidTest">Android Instrumented Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/androidTest"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="permission-rule.html">permissionRule</a><span class="token operator">: </span>GrantPermissionRule</div><div class="brief ">Regla que concede automaticamente el permiso de grabacion de audio necesario para SpeechRecognitionActivity.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1976832963%2FFunctions%2F721203029" anchor-label="setUp" id="1976832963%2FFunctions%2F721203029" data-filterable-set=":app:dokkaHtml/androidTest"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/androidTest" data-filterable-set=":app:dokkaHtml/androidTest">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-up.html"><span>set</span><wbr></wbr><span><span>Up</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1976832963%2FFunctions%2F721203029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/androidTest" data-filterable-set=":app:dokkaHtml/androidTest" data-active="" data-toggle=":app:dokkaHtml/androidTest">Android Instrumented Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/androidTest"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-up.html"><span class="token function">setUp</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Metodo que se ejecuta antes de cada test.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-195056842%2FFunctions%2F721203029" anchor-label="tearDown" id="-195056842%2FFunctions%2F721203029" data-filterable-set=":app:dokkaHtml/androidTest"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/androidTest" data-filterable-set=":app:dokkaHtml/androidTest">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tear-down.html"><span>tear</span><wbr></wbr><span><span>Down</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-195056842%2FFunctions%2F721203029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/androidTest" data-filterable-set=":app:dokkaHtml/androidTest" data-active="" data-toggle=":app:dokkaHtml/androidTest">Android Instrumented Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/androidTest"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="tear-down.html"><span class="token function">tearDown</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Libera los recursos del sistema después de cada test.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="210622703%2FFunctions%2F721203029" anchor-label="testClickSpeechRecognitionItem_opensActivity" id="210622703%2FFunctions%2F721203029" data-filterable-set=":app:dokkaHtml/androidTest"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/androidTest" data-filterable-set=":app:dokkaHtml/androidTest">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="test-click-speech-recognition-item_opens-activity.html"><span>test</span><wbr></wbr><span>Click</span><wbr></wbr><span>Speech</span><wbr></wbr><span>Recognition</span><wbr></wbr><span>Item_opens</span><wbr></wbr><span><span>Activity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="210622703%2FFunctions%2F721203029"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/androidTest" data-filterable-set=":app:dokkaHtml/androidTest" data-active="" data-toggle=":app:dokkaHtml/androidTest">Android Instrumented Tests</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/androidTest"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="test-click-speech-recognition-item_opens-activity.html"><span class="token function">testClickSpeechRecognitionItem_opensActivity</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Test que verifica que al hacer clic sobre el item de menu de &quot;Reconocimiento de Voz&quot;, se lanza correctamente SpeechRecognitionActivity.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

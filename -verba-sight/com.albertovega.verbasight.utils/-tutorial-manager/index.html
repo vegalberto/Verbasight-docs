@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>TutorialManager</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            VerbaSight
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":app:dokkaHtml/main">main</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="VerbaSight::com.albertovega.verbasight.utils/TutorialManager///PointingToDeclaration//1745091852">
+  <div class="breadcrumbs"><a href="../../../index.html">VerbaSight</a><span class="delimiter">/</span><a href="../index.html">com.albertovega.verbasight.utils</a><span class="delimiter">/</span><span class="current">TutorialManager</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Tutorial</span><wbr></wbr><span><span>Manager</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">TutorialManager</a></div><p class="paragraph">Clase encargada de gestionar el estado de visualizacion de los tutoriales guiados en la aplicacion VerbaSight. </p><p class="paragraph"> Utiliza SharedPreferences para almacenar si cada seccion (menu, transcripcion, reproductor de subtitulos) ya ha mostrado su tutorial al usuario. Esto permite que cada tutorial se muestre solo una vez. </p><p class="paragraph"> Esta clase necesita que se le facilite un contexto (por ejemplo, una Activity) para funcionar. Se ha creado la interfaz <code class="lang-kotlin">Tutorializable</code> para que se implemente de manera correcta en las Activities necesarias. </p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Alberto Vega</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2025-05-13</p></span></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-806033945%2FConstructors%2F1745091852" anchor-label="TutorialManager" id="-806033945%2FConstructors%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tutorial-manager.html"><span>Tutorial</span><wbr></wbr><span><span>Manager</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-806033945%2FConstructors%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span>Context</span></span><span class="token punctuation">)</span></div><div class="brief ">Constructor que inicializa la gestion de preferencias compartidas.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1246392623%2FFunctions%2F1745091852" anchor-label="areAllTutorialsDone" id="-1246392623%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="are-all-tutorials-done.html"><span>are</span><wbr></wbr><span>All</span><wbr></wbr><span>Tutorials</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1246392623%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="are-all-tutorials-done.html"><span class="token function">areAllTutorialsDone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1250183567%2FFunctions%2F1745091852" anchor-label="isHistoryTutorialDone" id="-1250183567%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-history-tutorial-done.html"><span>is</span><wbr></wbr><span>History</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1250183567%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-history-tutorial-done.html"><span class="token function">isHistoryTutorialDone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Verifica si el tutorial del historial ya se ha mostrado.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-121642058%2FFunctions%2F1745091852" anchor-label="isMenuTutorialDone" id="-121642058%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-menu-tutorial-done.html"><span>is</span><wbr></wbr><span>Menu</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-121642058%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-menu-tutorial-done.html"><span class="token function">isMenuTutorialDone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Verifica si el tutorial del menu principal ya se ha mostrado.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1446005258%2FFunctions%2F1745091852" anchor-label="isSubtitlesTutorialDone" id="1446005258%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-subtitles-tutorial-done.html"><span>is</span><wbr></wbr><span>Subtitles</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1446005258%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-subtitles-tutorial-done.html"><span class="token function">isSubtitlesTutorialDone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Verifica si el tutorial del reproductor de subtitulos ya se ha mostrado.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1668126515%2FFunctions%2F1745091852" anchor-label="isTranscriptionTutorialDone" id="1668126515%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-transcription-tutorial-done.html"><span>is</span><wbr></wbr><span>Transcription</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1668126515%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-transcription-tutorial-done.html"><span class="token function">isTranscriptionTutorialDone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Verifica si el tutorial de transcripcion ya se ha mostrado.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-703412957%2FFunctions%2F1745091852" anchor-label="isTxtViewerTutorialDone" id="-703412957%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-txt-viewer-tutorial-done.html"><span>is</span><wbr></wbr><span>Txt</span><wbr></wbr><span>Viewer</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-703412957%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-txt-viewer-tutorial-done.html"><span class="token function">isTxtViewerTutorialDone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Verifica si el tutorial del visor de .txt ya se ha mostrado.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-132237928%2FFunctions%2F1745091852" anchor-label="resetAllTutorials" id="-132237928%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reset-all-tutorials.html"><span>reset</span><wbr></wbr><span>All</span><wbr></wbr><span><span>Tutorials</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-132237928%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="reset-all-tutorials.html"><span class="token function">resetAllTutorials</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Marca todos los tutoriales como no completados</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1872815059%2FFunctions%2F1745091852" anchor-label="setHistoryTutorialDone" id="-1872815059%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-history-tutorial-done.html"><span>set</span><wbr></wbr><span>History</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1872815059%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-history-tutorial-done.html"><span class="token function">setHistoryTutorialDone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Marca el tutorial del historial como completado.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2111785094%2FFunctions%2F1745091852" anchor-label="setMenuTutorialDone" id="-2111785094%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-menu-tutorial-done.html"><span>set</span><wbr></wbr><span>Menu</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2111785094%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-menu-tutorial-done.html"><span class="token function">setMenuTutorialDone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Marca el tutorial del menu principal como completado.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="97595590%2FFunctions%2F1745091852" anchor-label="setSubtitlesTutorialDone" id="97595590%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-subtitles-tutorial-done.html"><span>set</span><wbr></wbr><span>Subtitles</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="97595590%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-subtitles-tutorial-done.html"><span class="token function">setSubtitlesTutorialDone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Marca el tutorial del reproductor de subtitulos como completado.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-159072273%2FFunctions%2F1745091852" anchor-label="setTranscriptionTutorialDone" id="-159072273%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-transcription-tutorial-done.html"><span>set</span><wbr></wbr><span>Transcription</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-159072273%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-transcription-tutorial-done.html"><span class="token function">setTranscriptionTutorialDone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Marca el tutorial de transcripcion como completado.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2051822625%2FFunctions%2F1745091852" anchor-label="setTxtViewerTutorialDone" id="-2051822625%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-txt-viewer-tutorial-done.html"><span>set</span><wbr></wbr><span>Txt</span><wbr></wbr><span>Viewer</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span><span>Done</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2051822625%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-txt-viewer-tutorial-done.html"><span class="token function">setTxtViewerTutorialDone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">Marca el tutorial del visor de .txt como completado.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1111351175%2FFunctions%2F1745091852" anchor-label="updateTutorialPreferenceFlag" id="-1111351175%2FFunctions%2F1745091852" data-filterable-set=":app:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-tutorial-preference-flag.html"><span>update</span><wbr></wbr><span>Tutorial</span><wbr></wbr><span>Preference</span><wbr></wbr><span><span>Flag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1111351175%2FFunctions%2F1745091852"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":app:dokkaHtml/main" data-filterable-set=":app:dokkaHtml/main" data-active="" data-toggle=":app:dokkaHtml/main">main</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":app:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="update-tutorial-preference-flag.html"><span class="token function">updateTutorialPreferenceFlag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">prefs<span class="token operator">: </span>SharedPreferences</span></span><span class="token punctuation">)</span></div><div class="brief ">Activa o desactiva los tutoriales globalmente.</div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2025 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
